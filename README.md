@@ -34,21 +34,3 @@ What Docker 1.0 means for OpenStack
 More Docker articles from Opensource.com
 Want to master microservices? Learn how to run OpenShift Container Platform in a self-paced, hands-on lab environment.
 
-Creative Commons License
-Subscribe to our weekly newsletter
-
-
-Get the highlights in your inbox every week.
-
-Find us: Twitter Facebook Youtube Mastodon IRC RSS
- 
-Privacy Policy Terms of Use Contact Meet the Team Visit opensource.org
-For more discussion on open source and the role of the CIO in the enterprise, join us at The EnterprisersProject.com.
-
-The opinions expressed on this website are those of each author, not of the author's employer or of Red Hat.
-
-Opensource.com aspires to publish all content under a Creative Commons license but may not be able to do so in all cases. You are responsible for ensuring that you have the necessary permission to reuse any work on this site. Red Hat and the Red Hat logo are trademarks of Red Hat, Inc., registered in the United States and other countries.
-
-Copyright ©2019 Red Hat, Inc.
-
-TwitterFacebook0LinkedInReddit1EmailMastodon

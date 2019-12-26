@@ -1,0 +1,48 @@
+Container Related commands
+ 
+ 1) Run a container in interactive mode : $docker run -it rhel7/rhel bash
+ 2)Run a container in detached mode:      $docker run---name mywildfly -d -p 8080 jboss/wildfly
+ 3)Run a detached container in previously created container network : $ docker network create mynetwork
+                                                                      $ docker run ---name  mywildfly-net -d --net mynetwork \-p 8o8o:8080 jboss/wildfly
+                                                                      
+4)Run a deteched container mountaing a local folder inside the container:$docker run--name mywildfly -volume -d\-vmyfolder/:opt/jboss/wildfly/standalone/deployments/ \-p  8o8o:8080 wildflyjboss/wildfly 
+5)List the container : $docker ps(list only active conatiner)
+                       $docker ps-a(list out all conatiners)
+6)stop the conatiner: $docker stop [conatiner-name][container-id]
+  stop conatainer using time=1 second:$docker stop -t1
+ 7)remove conatiner :
+      * remove a stopped conatiner:$docker rm [conatiner-name][container-id]
+      *force to stop removed container :$docker rm -f [container-name][container-id]
+      *remove all containers:$docker rm -f $(container ps-aq)
+      *remove all stopped containers :$docker rm $(dodocker ps -q -f "status=exited")
+8)Execute a new process in an exisiting container :$dockerexec -it mywildfly bash
+
+
+
+commands and description
+ daemon       Run the persistent process that manages container
+ attach       Attach to run the conatiner  to view its ongoing output or to controll interactivitty
+ commit        Create a new image from a container changes
+ cp           Copy file
+ Create       create a container
+ diff         inspect change on container's filesystem
+ exec         Run a command in runnating container
+ export       export the contents of the container's filesystem as atar archives
+ kill          kill a running container
+ logs         Fetch the logs of a containers
+ Pause         pause all the process in the container
+ port          list the port mapping
+ ps            list the container
+ rename        rename the container
+ restart        resart the container
+ rm             remove
+ run            run the command in the container
+ start          start one or more container
+ starts         display one or more  containers using statistics
+ stop          stop the container
+ top           display the running process of container
+ unpause       unpause all the containers
+ wait           block untill a container stops
+ 
+ 
+ 

@@ -1,0 +1,17 @@
+RUNNING WEB SERVER CONTAINER
+
+$mkdir -p www/                             --------------> create a directory
+$ echo "server is up"> www/index.html      --------------> make a text file to server later
+
+$docker run -d\                           ---------------->run the process in a container as a daemon
+-p  8000:8000\                            ---------------->map port 8000 in containe as a daemon
+--name=pythonweb \                        ---------------->Nmae the container "pythonweb"
+-v'pwd' /www:/var/www/html \              ---------------->map container html to host www directory
+-w/var/www/html \                        ----------------->set the working directory to var/www/html
+rhel7/rhel \                              ---------------->choose the rhel7/rhel directory
+/bin/python \                             ---------------->run the python command for a simple web server listing to port 8000
+-m SimpleHTTPServer 8000                  
+$curl <container-daemon-ip>:8000          ----------------->check that the server is working
+$docker ps                                ----------------->container is running
+$docker inspect pythonweb | less          ------------------>inspect the container
+$docker exec -it pythonweb bash          ------------------->open the running containter look inside

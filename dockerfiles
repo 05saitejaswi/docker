@@ -1,0 +1,32 @@
+dockersfiles:It provides the instructions to build a container images through the ' docker build -t [username/]<image-name>[:tag] <dockerfiles-path>
+it starts from the previousely existing Base images
+
+
+using the dockerfiles
+#build the wildfly image
+$docker build -t wildfly
+#Run a wildfly server
+$docker run -it -p 8080:8080 -p 9990:9990 mywildfly
+#Access the wildflyadminstrative console
+open https://<docker-daemon-ip>:9990 in a browser
+
+
+
+Dockerfiles instruction arguments
+commands and  descriptiobn
+FROM            set the base image for the subsequence
+MAINTAINER      sets the author field of generated image
+RUN             execute the command in a new layer on top of current image and cummit the result
+CMD             allow only once
+LABEL           add meta datato the image
+EXPOSE         informs container runtaime that the container listed
+ENV            sets an envirolment variable
+ADD            copy new files,directories,url
+COPY            copy new file system
+ENTRYPOINT     allow all configer into conatiner
+VOLUME         create a mount point and marks it aholding externallymounted vol from native host 
+USER           sets the username
+WORKIR         sets the work directory for any RUN ,CMD.ENTRYPOINT,COPYandADD commands
+ARG            define the variables that user can pass
+ONBUILD        Add an instruction to be exected later.when the image is used as a base 
+STOPSIGNAL      sets the system call signal that willl be sent to caontainer to exit

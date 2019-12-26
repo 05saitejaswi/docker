@@ -1,0 +1,32 @@
+images related commands
+
+1) Build an image using dockerfiles
+*) Build an image :$docker build -t[username/]<image-name>[:tag] <dockerfiles-path>
+*) creating the image in the smae folder: $docker build -t myimage:latest
+2)Check the history of an image: 
+*)Check the history of jboss(wildfly image :$docker history jboss/wildfly
+*)Check the history of image :$docker history [username/]<imagge-name>[:tag]
+3)list the image :$docker image
+4)Remove an image from the local registry : $docker rmi [username/] <image-name>[:tag]
+5)tag the image 
+*)Creates an image called myimage with the tag "Vl" for  for the image jboss :$docker tag jboss/wildfly myimage:v1
+*)Create the new image with latest tag :$docker <image-name><new-image-name>
+6)Export the image in external file :$docker save -o <filename>.tar
+                                     :$docker save -i <filename>.tar
+7)push an image into registory:$docker push [registry /] [username/]<image-name>[:tag]
+
+
+commands and description
+build        build an image from dockerfiles
+history      show the history of image
+images       list images
+import       create an empty file system and to import the content into container
+info         display system wide information
+inspect      return low level information
+load         load image
+pull         pull image
+push         push image
+rmi          remove image 
+save         save one or more  image
+search      search one or more imafges
+tag         tag one or more images

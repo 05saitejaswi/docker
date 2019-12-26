@@ -1,0 +1,32 @@
+network related commands
+docker network [CMD] [opt]
+
+commands and descript
+connect      connect a container to network
+create       create a new network with the specified name
+disconnect   disconnects a container from a network
+inspect       display the details information on a network
+ls            list all the network created by the user
+rm            delete all the network
+
+
+default is https://index.docker.io/vl/
+login       login to the container registry server.if no server specified the default
+logout      logout from a container registry
+
+
+
+
+
+************************************************************************************************************
+Volume related commands
+docker volume [CMD] [OPTS]
+ create      create a volume
+ inspect     return low level information on avolume
+ ls          lists volume
+ rm          remove the volumes
+ 
+ 
+ 
+ events    get real time  event for the server
+ inspect  show version information
